@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>vue-cli3-project</title>
+    <script>
+      var timerStart = Date.now();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but vue-cli3-project doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      // 计算 dom 挂载时间
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('dom 挂载的时间：', Date.now() - timerStart);
+      });
+      // 计算加载完成时间
+      window.addEventListener('load', function() {
+        console.log('所有资源加载完成的时间：', Date.now() - timerStart);
+      });
+    </script>
+  </body>
+</html>

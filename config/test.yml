@@ -1,0 +1,9 @@
+env:
+    - dev
+    - preview
+    - prod
+domin:
+  dev: 127.0.0.1
+  preview: 192.168.1.204
+  prod: m.sdmall.com
+server: 
